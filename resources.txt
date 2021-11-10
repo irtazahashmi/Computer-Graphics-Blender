@@ -1,0 +1,28 @@
+Used Youtube Doughnut tutorial by Blended Guru to make my own dougnuts:
+Blender Beginner Tutorial - Part 1: https://www.youtube.com/watch?v=TPrnSACiTJ4&ab_channel=BlenderGuru
+Part 2, Level 1: Modelling - Beginner Blender Tutorial Series: https://www.youtube.com/watch?v=RaT-uG5wgUw&ab_channel=BlenderGuru
+Part 3, Level 1: Modifiers - Blender Beginner Tutorial: https://www.youtube.com/watch?v=R2qjqqfkH6E&ab_channel=BlenderGuru
+Part 4, Level 1: Modelling - Blender Beginner Tutorial: https://www.youtube.com/watch?v=jmSgsaNSQ6s&ab_channel=BlenderGuru
+Part 5, Level 1: Sculpting - Blender Beginner Tutorial: https://www.youtube.com/watch?v=6OTX3ZdYvEA&ab_channel=BlenderGuru
+Part 6, Level 1: Rendering - Blender Beginner Tutorial: https://www.youtube.com/watch?v=ZTxBrjN1ugA&ab_channel=BlenderGuru
+Part 7, Level 1: Materials - Blender Beginner Tutorial: https://www.youtube.com/watch?v=5lr8QnR5WWU&t=20s&ab_channel=BlenderG
+Part 1, Level 2: Particles - Blender Beginner Tutorial: https://www.youtube.com/watch?v=jNmnPXY9UQA&t=1s&ab_channel=BlenderGuru
+Part 2, Level 2: Random Materials - Blender Beginner Tutorial: https://www.youtube.com/watch?v=aZ5ungDgFNc&ab_channel=BlenderGuru
+Part 3, Level 2: Texture Painting - Blender Beginner Tutorial: https://www.youtube.com/watch?v=nht2RoYBUfA&t=5s&ab_channel=BlenderGuru
+Part 4, Level 2: Procedural Displacement - Blender Beginner Tutorial: https://www.youtube.com/watch?v=Rh5gAQLtOls&t=37s&ab_channel=BlenderGuru
+
+How To Model A Plate in Blender (Very easy!!): https://www.youtube.com/watch?v=PqGExeCppwo&ab_channel=Owen3DRBLX
+
+Used this Youtube video tutorial make a wooden texture for the surface:
+https://www.youtube.com/watch?v=jXEdMqwXQZU&ab_channel=GreenPillow
+
+Wooden texture downloaded from:
+https://www.poliigon.com/texture/wood-flooring-044
+
+
+
+
+
+
+
+

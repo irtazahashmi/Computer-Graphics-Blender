@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Blender</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+/*
+ * Slightly modified version of the following theme:;
+ * https://github.com/markdowncss/air
+ */
+html {
+  font-size: 12px;
+}
+
+@media print {
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html {
+    font-size: 14px;
+  }
+  body {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  line-height: 1.85;
+  padding-bottom: 2rem;
+}
+
+p,
+.air-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+h1,
+.air-h1,
+h2,
+.air-h2,
+h3,
+.air-h3,
+h4,
+.air-h4 {
+  margin: 1.414rem 0 .5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+
+h1,
+.air-h1 {
+  margin-top: 0;
+  font-size: 3.998rem;
+}
+
+h2,
+.air-h2 {
+  font-size: 2.827rem;
+}
+
+h3,
+.air-h3 {
+  font-size: 1.999rem;
+}
+
+h4,
+.air-h4 {
+  font-size: 1.414rem;
+}
+
+h5,
+.air-h5 {
+  font-size: 1.121rem;
+}
+
+h6,
+.air-h6 {
+  font-size: .88rem;
+}
+
+small,
+.air-small {
+  font-size: .707em;
+}
+
+/* https://github.com/mrmrs/fluidity */
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+}
+.subfigures {
+  text-align: center;
+}
+.subfigures figure {
+  float: left;
+  width: 50%;
+  margin:0;
+  display: inline-block;
+}
+.subfigures img {
+  display: inline-block;
+  width: 90%;
+}
+.subfigures figure figcaption {
+  display: inline-block;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300);
+
+body {
+  color: #444;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 300;
+  margin: 6rem auto 1rem;
+  max-width: 48rem;
+  text-align: justify;
+}
+
+/*img {
+  border-radius: 50%;
+  height: 200px;
+  margin: 0 auto;
+  width: 200px;
+}*/
+
+a,
+a:visited {
+  color: #3498db;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #2980b9;
+}
+
+pre:not(.sourceCode) {
+  background-color: #fafafa;
+}
+pre {
+  padding: 1rem;
+  text-align: left;
+}
+
+blockquote {
+  margin: 0;
+  border-left: 5px solid #7a7a7a;
+  font-style: italic;
+  padding: 1.33em;
+  text-align: left;
+}
+
+ul,
+ol,
+li {
+  text-align: left;
+}
+
+p {
+  color: #777;
+}
+</style>
+  <div style="overflow:auto;">
+  	<p style="float:left;margin:0;"><b>CSE2215</b> - Computer Graphics</p><p style="float:right;margin:0;">Elmar Eisemann, Ricardo Marroqium, Mathijs Molenaar</p>
+  </div>
+  
+  <hr>
+  <br/>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Blender</h1>
+</header>
+<p><a href="https://www.blender.org/">Blender</a> is an open-source 3D Modelling and Animation (and much more) software. Many topics covered in the lectures are put into practice in this type of software.</p>
+<p>In this individual assignment, you are asked to create and render your own 3D model using Blender.</p>
+<p>We have included a guide to help you get acquainted with Blender and show how you can use it to model simple 3D shapes.</p>
+<p>There are many online Blender tutorials, for example, from the Blender webpage <a href="https://www.blender.org/support/tutorials/">https://www.blender.org/support/tutorials/</a></p>
+<p>We also highly recommend the Donut guide by BlenderGuru: <a href="https://www.youtube.com/watch?v=TPrnSACiTJ4">https://www.youtube.com/watch?v=TPrnSACiTJ4</a></p>
+<p>Make sure you follow Blender 2.8 tutorials, there are significant differences from 2.7 or below.</p>
+<p>You may also use other modelling software, but make sure you are able to export to OBJ format and render an image of your model.</p>
+<h3 id="rules">Rules</h3>
+<p>You can model a character, a house, a plant, a spaceship, a car or anything else you wish. There are no strict restrictions on the model that you may create as long as it is not too simple, such as a few cubes or spheres. Try to include at least some texture or material to your model.</p>
+<p>Following a tutorial (such as the Donut) and making small modifications is also valid for completing this assignment.</p>
+<h3 id="submission">Submission</h3>
+<ul>
+<li>One image of your model rendered in Blender - name you file “<em>assignment-blender.png</em>”</li>
+<li>A zip file including all modelling files (obj, mtl, textures, blender …)</li>
+<li>A text file (.txt) listing any external references and sources used. In case you modelled everything yourself, just state so in this file.</li>
+</ul>
+<p><strong>Important:</strong></p>
+<ul>
+<li>Do not bundle everything into one file. Upload the image, the zip file, and the text file (if any) separately</li>
+<li>Make sure you name your image as specified above, otherwise the script will miss your file and it will not be graded  </li>
+</ul>
+</body>
+</html>
